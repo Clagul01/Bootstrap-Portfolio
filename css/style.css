@@ -1,13 +1,23 @@
 @font-face {
     font-family: 'displayitalic';
-    src: url("/fonts/DM_Serif_DIsplay/DMSerifDisplay-Italic.ttf");
+    src: url("/fonts/Noto_Serif_Display/NotoSerifDisplay-VariableFont_wdth\,wght.ttf");
 }
 @font-face {
     font-family: 'displaysans';
-    src: url("/fonts/DM_Sans/DMSans-Medium.ttf");
+    src: url("/fonts/Noto_Serif_Display/NotoSerifDisplay-Italic-VariableFont_wdth\,wght.ttf");
 }
 html {
     scroll-behavior: smooth;
+}
+* {
+    font-family: 'displaysans';
+}
+h1, h2, h3 {
+    font-family: 'displayitalic';
+    font-weight: bold;
+}
+h2 {
+    border-top: 2px black solid;
 }
 main {
     overflow-y: scroll;
@@ -20,11 +30,8 @@ h1 {
     background-size: contain;
     width: 300px;
     height: 300px;
-    background-image: url('/images/IMG_6796.JPG');
+    background-image: url('#ß');
     background-repeat: no-repeat
-}
-p {
-    font-family: 'displaysans';
 }
 h2 {
     padding: 70px;
@@ -37,8 +44,8 @@ h2 {
 .skills-container {
     text-align: center;
 }
-.skills-container .card {
-    border: none;
+.card {
+    border-style: none;
     text-align: center;
     
 }
