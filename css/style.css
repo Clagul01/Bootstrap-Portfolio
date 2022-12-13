@@ -1,9 +1,20 @@
+@font-face {
+    font-family: 'displayitalic';
+    src: url("/fonts/DM_Serif_DIsplay/DMSerifDisplay-Italic.ttf");
+}
+@font-face {
+    font-family: 'displaysans';
+    src: url("/fonts/DM_Sans/DMSans-Medium.ttf");
+}
 html {
     scroll-behavior: smooth;
 }
 main {
     overflow-y: scroll;
     height: auto;
+}
+h1 {
+    font-family: 'displayitalic';
 }
 .image-container {
     background-size: contain;
@@ -12,7 +23,9 @@ main {
     background-image: url('/images/IMG_6796.JPG');
     background-repeat: no-repeat
 }
-
+p {
+    font-family: 'displaysans';
+}
 h2 {
     padding: 70px;
 }
@@ -27,6 +40,7 @@ h2 {
 .skills-container .card {
     border: none;
     text-align: center;
+    
 }
 svg {
     filter: drop-shadow(0px 0px 2px rgb(0 0 0));
@@ -35,4 +49,9 @@ svg {
 img {
     filter: drop-shadow(0px 0px 2px rgb(0 0 0));
     margin: auto;
+}
+svg:hover {
+    filter: drop-shadow(0px 0px 5px rgb(0 0 0));
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
