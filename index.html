@@ -9,13 +9,13 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 
   <body>
     <!--navbar-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" id="navContainer">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">LIAM CLAGUE // JUNIOR WEB DEVELOPER</a>
+        <a class="navbar-brand" href="#">LIAM CLAGUE // WEB DEVELOPER</a>
         <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,13 +25,13 @@
               <a class="nav-link" aria-current="page" href="#jumbotronContainer">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#jumbotron">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#workContainer">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#skillsContainer">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -40,21 +40,30 @@
         </div>
       </div>
     </nav>
-    <main class="main-content" data-bs-spy="scroll" data-bs-target="#navContainer" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+    <main class="main-content">
     <!--jumbotron-->
     <div class="jumbotron jumbotron-fluid text-center row justify-content-center" id="jumbotronContainer">
-      <div class="container col-lg-4" >
+      <div class="heading-container col-lg-6" >
         <h1 class="display-4">Liam Clague</h1>
         <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
       </div>
-      <div class="image-container col-lg-8">
+      <div class="image-container col-lg-6">
+        <img src="/images/IMG_6796.JPG" height="500px" width="500px" alt="" id="portfolioImage">
       </div>
     </div>
     <!--work section-->
     <div class="work-section" id="workContainer">
       <h2>Work</h2>
       <div class="card-container row justify-content-between">
-        <div class="card col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+        <div class="card col-lg-6 col-md-6 col-sm-12" style="width: 18rem;">
+          <img src="/images/work-examples/Screenshot 2022-12-08 at 22.50.18.png" height="80%" width="80%" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col-lg-6 col-md-6 col-sm-12" style="width: 18rem;">
           <img src="..." class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -62,7 +71,7 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+        <div class="card col-lg-6 col-md-6 col-sm-12" style="width: 18rem;">
           <img src="..." class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -70,15 +79,7 @@
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
-        <div class="card col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card col-lg-3 col-md-6 col-sm-12" style="width: 18rem;">
+        <div class="card col-lg-6 col-md-6 col-sm-12" style="width: 18rem;">
           <img src="..." class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>

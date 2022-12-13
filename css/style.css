@@ -6,6 +6,50 @@
     font-family: 'displaysans';
     src: url("/fonts/Noto_Serif_Display/NotoSerifDisplay-Italic-VariableFont_wdth\,wght.ttf");
 }
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    90% {
+        display: block;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 10;
+    }
+}
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(400%);
+        opacity: 0;
+    }
+    90% {
+        display: block;
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 10;
+    }
+}
+@keyframes transToSolid {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
 html {
     scroll-behavior: smooth;
 }
@@ -20,18 +64,37 @@ h2 {
     border-top: 2px black solid;
 }
 main {
+    position: absolute;
+    margin: 0px;
     overflow-y: scroll;
-    height: auto;
+    top: 0px;
+    width: 100%;
 }
-h1 {
-    font-family: 'displayitalic';
+.jumbotron {
+    background: rgb(251,108,1);
+    background: linear-gradient(90deg, rgba(251,108,1,1) 39%, rgba(0,87,132,1) 56%);
+    height: 100vh;
 }
-.image-container {
-    background-size: contain;
-    width: 300px;
-    height: 300px;
-    background-image: url('#ß');
-    background-repeat: no-repeat
+.jumbotron p {
+    color: #F9F6EE;
+    filter: drop-shadow(0px 0px 5px rgb(0 0 0));
+    animation: 2s ease-out 0s 1 slideInFromBottom;    
+}
+.jumbotron h1 {
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+    color: #F9F6EE;
+    filter: drop-shadow(0px 0px 5px rgb(0 0 0));
+}
+.heading-container {
+    margin: auto;
+    text-align: center;
+}
+#portfolioImage {
+    display: relative;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px 20px 5px;
+    animation: 3s ease-out 0s 1 transToSolid;
 }
 h2 {
     padding: 70px;
@@ -54,7 +117,6 @@ svg {
     margin: auto;
 }
 img {
-    filter: drop-shadow(0px 0px 2px rgb(0 0 0));
     margin: auto;
 }
 svg:hover {
@@ -62,3 +124,4 @@ svg:hover {
     transition: ease-in-out 0.2s;
     cursor: pointer;
 }
+
