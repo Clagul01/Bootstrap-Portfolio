@@ -1,11 +1,18 @@
 html {
     scroll-behavior: smooth;
 }
-
+main {
+    overflow-y: scroll;
+    height: auto;
+}
 
 #jumbotronContainer {
     background-image: url(/images/IMG_6796.JPG);
     background-size: cover;
     height: 100vh;
     width: 100vw;
+}
+
+.work-section {
+    text-align: center;
 }
